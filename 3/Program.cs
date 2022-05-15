@@ -19,12 +19,12 @@ for (int i = 0; i < m; i++)
  Console.WriteLine();
 }
 
-Console.WriteLine("Средние значения по строкам равны ");
+Console.WriteLine("Средние арифметические значения по столбцам: ");
 
 for (int j=0; j<m; j++)
 {
-    average = Math.Round(sum[j]/m,2);
-    Console.Write(average  + "     ");
+    average = Math.Round(sum[j]/m, 3);
+    Console.Write(average  + ";  ");
 }
 
 
@@ -47,7 +47,7 @@ void FillArray(double[,] matr)
     {
         for (int columns = 0; columns < matr.GetLength(1); columns++)
         {
-            matr[rows,columns] = new Random().Next(1,11); 
+            matr[rows,columns] = new Random().Next(1,15); 
         }
         Console.WriteLine();
     }
